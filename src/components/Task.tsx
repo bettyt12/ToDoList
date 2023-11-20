@@ -22,7 +22,7 @@ const Task: React.FC<TaskProps> = ({ task, deleteTask, completeTask }) => {
 						onChange={handleComplete}
 						className="mr-3 cursor-pointer"
 					/>
-					<div className="flex-grow">
+					<div className="flex-grow text-left ">
 						<span
 							style={{
 								textDecoration: task.completed ? 'line-through' : 'none',
