@@ -41,7 +41,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ addTask }) => {
           </option>
         ))}
       </select>
-      <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md ml-2">
+      <button type="submit" disabled={!taskName} className={`bg-blue-500 text-white py-2 px-4 rounded-md ml-2 ${!taskName ? 'opacity-50 cursor-not-allowed' : ''}`}>
         <PlusCircle size={20} />
       </button>
     </form>
